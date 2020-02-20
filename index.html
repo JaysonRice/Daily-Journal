@@ -11,27 +11,19 @@
 <body>
     <h1>Daily Journal</h1>
     <form class="journalForm" action="">
-        <fieldset>
-            <label for="journalDate">Date of entry</label>
+        <fieldset class="fieldsetForm">
+            <label class="formLabel" for="journalDate">Date of entry</label>
             <input type="date" name="journalDate" id="journalDate">
-        </fieldset>
-        <fieldset>
-            <label for="conceptsCovered">Concepts covered</label>
+            <label class="formLabel" for="conceptsCovered">Concepts covered</label>
             <input type="text" name="conceptsCovered" id="conceptsCovered">
-        </fieldset>
-        <fieldset>
-            <label for="journalEntry">Journal entry</label>
-            <input type="textarea" name="journalEntry" id="journalEntry">
-        </fieldset>
-        <fieldset>
-            <label for="mood">Mood for the day</label>
+            <label class="formLabel" for="journalEntry">Journal entry</label>
+            <textarea rows="5" cols="30" name="journalEntry" id="journalEntry"></textarea>
+            <label class="formLabel" for="mood">Mood for the day</label>
             <select name="mood" id="mood">
-            <option value="happy">Happy</option>
-            <option value="sad">Sad</option>
-            <option value="stressed">Stressed</option>
+                <option value="happy">Happy</option>
+                <option value="sad">Sad</option>
+                <option value="stressed">Stressed</option>
             </select>
-        </fieldset>
-        <fieldset>
             <input type="submit" name="submit" id="submit" value="Record Journal Entry">
         </fieldset>
     </form>
