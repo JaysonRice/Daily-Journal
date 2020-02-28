@@ -9,6 +9,7 @@
 </head>
 
 <body>
+    <div>
     <h1>Daily Journal</h1>
     <form class="journalForm" action="">
         <fieldset class="fieldsetForm">
@@ -21,12 +22,18 @@
             <label class="formLabel" for="mood">Mood for the day</label>
             <select name="mood" id="mood">
                 <option value="happy">Happy</option>
+                <option value="sad">Ok</option>
                 <option value="sad">Sad</option>
                 <option value="stressed">Stressed</option>
             </select>
             <input type="submit" name="submit" id="submit" value="Record Journal Entry">
         </fieldset>
+    </div>
+        <section class="journalEntry">
+
+        </section>
     </form>
+    <script type="module" src="./scripts/main.js"> </script>
 </body>
 
 </html>
