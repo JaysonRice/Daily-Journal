@@ -12,7 +12,7 @@ const EntryListComponent = () => {
         journalHTMLRepresentation += JournalEntryComponent(entry)
     }
         entryLog.innerHTML = `
-        ${journalHTMLRepresentations}
+        ${journalHTMLRepresentation}
         `
 }
 
