@@ -1,18 +1,10 @@
-.journalForm {
-    display: flex;
-    flex-basis: 33%;
+@import "./journalEntries.css";
+@import "./form.css";
+
+body {
+background-color: rgb(175, 228, 175);
 }
 
-.fieldsetForm {
-    display: flex;
-    flex-direction: column;
-}
-
-#submit {
-    margin: 1em 0em 0em 0em;
-}
-
-.formLabel {
-    margin: 1em 0em 0em 0em;
-    font-weight: bold;
+h1 {
+    font-family: 'Patua One', cursive;
 }

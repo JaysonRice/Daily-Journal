@@ -1,0 +1,43 @@
+.form {
+    text-align: center;
+}
+
+.formLabel {
+    margin: 1rem 0rem 0rem 0rem;
+    font-weight: bold;
+    font-family: 'Patua One', cursive;
+}
+
+.fieldsetForm {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: 0 auto;
+    background-color: rgb(216, 236, 225);
+    border: solid green 3px;
+    border-radius: 1rem;
+}
+
+.user__input {
+    width: 50%;
+    margin: auto;
+    background-color: rgb(239, 243, 241);
+    border: solid rgb(175, 228, 175) 2px;
+    font-family: 'Nunito', sans-serif;
+}
+
+.btn__submit {
+    width: 65%;
+    margin: 0.7rem auto;
+    border: solid rgb(175, 228, 175) 2px ;
+    border-radius: 0.5em;
+    transition: 0.2s;
+}
+
+.btn__submit:hover {
+    width: 65%;
+    margin: 0.7rem auto;
+    border: solid rgb(175, 228, 175) 2px ;
+    border-radius: 0.5em;
+    box-shadow: rgb(111, 205, 92) 2px 2px;
+}

@@ -5,34 +5,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Nunito|Patua+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/main.css">
 </head>
 
 <body>
-    <div>
+    <main class="container">
+    <section class="form">
     <h1>Daily Journal</h1>
     <form class="journalForm" action="">
         <fieldset class="fieldsetForm">
             <label class="formLabel" for="journalDate">Date of entry</label>
-            <input type="date" name="journalDate" id="journalDate">
+            <input class="user__input" type="date" name="journalDate" id="journalDate">
             <label class="formLabel" for="conceptsCovered">Concepts covered</label>
-            <input type="text" name="conceptsCovered" id="conceptsCovered">
+            <input class="user__input" type="text" name="conceptsCovered" id="conceptsCovered">
             <label class="formLabel" for="journalEntry">Journal entry</label>
-            <textarea rows="5" cols="30" name="journalEntry" id="journalEntry"></textarea>
+            <textarea class="user__input" rows="5" cols="30" name="journalEntry" id="journalEntry"></textarea>
             <label class="formLabel" for="mood">Mood for the day</label>
-            <select name="mood" id="mood">
-                <option value="happy">Happy</option>
-                <option value="sad">Ok</option>
-                <option value="sad">Sad</option>
-                <option value="stressed">Stressed</option>
+            <select class="user__input" name="mood" id="mood">
+                <option class="mood__selection" value="happy">Happy</option>
+                <option class="mood__selection" value="sad">Ok</option>
+                <option class="mood__selection" value="sad">Sad</option>
+                <option class="mood__selection" value="stressed">Stressed</option>
             </select>
-            <input type="submit" name="submit" id="submit" value="Record Journal Entry">
+            <input class="btn__submit" type="submit" name="submit" id="submit" value="Record Journal Entry">
         </fieldset>
-    </div>
+    </section>
         <section class="journalEntry">
 
         </section>
     </form>
+</main>
     <script type="module" src="./scripts/main.js"> </script>
 </body>
 
