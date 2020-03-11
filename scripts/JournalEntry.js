@@ -1,5 +1,6 @@
 const JournalEntryComponent = (entry) => {
     return `
+    <div class="dividingLine"></div>
         <section id="entry--${entry.id}" class="journalEntry">
         <div> Date:${entry.date}</div>
         <div> Concept: ${entry.concept}</div>
