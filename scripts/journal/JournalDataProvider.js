@@ -1,7 +1,5 @@
 let journalEntries = []
 
-const eventHub = document.querySelector(".container")
-
 export const getEntries = () => { 
     return fetch('http://localhost:3000/notes')
     .then(response => response.json())
