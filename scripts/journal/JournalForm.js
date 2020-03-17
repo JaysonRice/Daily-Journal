@@ -1,4 +1,31 @@
+import { saveEntry } from "./JournalDataProvider.js"
+
 const contentTarget = document.querySelector(".form")
+
+// Handle browser-generated click event in component
+contentTarget.addEventListener("click", clickEvent => {
+    if (clickEvent.target.id === "saveEntry") {
+
+        const journalDate = document.querySelector("#journalDate").value
+        const conceptsCovered = document.querySelector("#conceptsCovered").value
+        const journalEntry = document.querySelector("#journalEntry").value
+        const mood = document.querySelector("#mood").value
+
+
+        // Make a new object representation of a note
+        const newEntry = {
+            date: journalDate,
+            concept: conceptsCovered,
+            entry: journalEntry,
+            mood: mood
+        }
+
+        // Change API state and application state
+        saveEntry(newEntry)
+    }
+})
+
+
 // This component is responsible for rendering the journal form on the Dom.
 
 const useJournalForm = () => {
@@ -19,7 +46,7 @@ const useJournalForm = () => {
             <option class="mood__selection" value="sad">Sad</option>
             <option class="mood__selection" value="stressed">Stressed</option>
         </select>
-        <input class="btn__submit" type="submit" name="submit" id="submit" value="Record Journal Entry">
+        <input class="btn__submit" type="submit" name="submit" id="saveEntry" value="Record Journal Entry">
     </fieldset>
     `
 }
