@@ -19,12 +19,11 @@ contentTarget.addEventListener("click", clickEvent => {
             entry: journalEntry,
             mood: mood
         }
-
+debugger
         // Change API state and application state
         saveEntry(newEntry)
     }
 })
-
 
 // This component is responsible for rendering the journal form on the Dom.
 
@@ -46,7 +45,7 @@ const useJournalForm = () => {
             <option class="mood__selection" value="sad">Sad</option>
             <option class="mood__selection" value="stressed">Stressed</option>
         </select>
-        <input class="btn__submit" type="submit" name="submit" id="saveEntry" value="Record Journal Entry">
+        <button class="btn__submit" id="saveEntry">Record Journal Entry</button>
     </fieldset>
     `
 }

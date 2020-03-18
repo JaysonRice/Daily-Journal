@@ -9,7 +9,6 @@ const dispatchStateChangeEvent = () => {
     eventHub.dispatchEvent(entryStateChangeEvent)
 }
 
-export const useEntries = () => journalEntries.slice()
 
 export const getEntries = () => { 
     return fetch('http://localhost:3000/notes')
@@ -20,7 +19,7 @@ export const getEntries = () => {
 }
 
 export const saveEntry = entry => {
-    return fetch('http://localhost:3000/notes', {
+    fetch('http://localhost:3000/notes', {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
@@ -36,5 +35,5 @@ export const useJournalEntries = () => {
         (currentEntry, nextEntry) =>
             Date.parse(currentEntry.date) - Date.parse(nextEntry.date)
     )
-    return sortedByDate
+    return sortedByDate.slice()
 }
