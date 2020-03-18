@@ -1,0 +1,32 @@
+{
+  "notes": [
+    {
+      "id": 1,
+      "date": "2/26/2020",
+      "concept": "HTML & CSS",
+      "entry": "We worked on a travel brochure site as a team.",
+      "mood": "Good"
+    },
+    {
+      "id": 2,
+      "date": "02/27/2020",
+      "concept": "Javascript",
+      "entry": "We talked about representing fish through html using javascript.",
+      "mood": "Ok"
+    },
+    {
+      "id": 3,
+      "date": "02/28/2020",
+      "concept": "Javascript",
+      "entry": "We worked on changing information on Martin's Aquarium to load dynamically.",
+      "mood": "Ok"
+    },
+    {
+      "date": "2020-03-18",
+      "concept": "JSON Server",
+      "entry": "Spent a very long time debugging how to POST to an API. Finally realized that input type=\"submit\" is different than an HTML button. Took 3 hours, would do again.",
+      "mood": "ok",
+      "id": 4
+    }
+  ]
+}
